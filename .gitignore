@@ -1,0 +1,10 @@
+*.log
+.idea/
+package-lock.json
+node_modules/
+bash/
+build/
+dist/
+
+.DS_Store
+

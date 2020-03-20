@@ -1,0 +1,18 @@
+{
+  "type": "sqlite",
+  "database": "database.db",
+  "name": "default",
+  "synchronize": false,
+  "logging": true,
+  "migrationsTableName": "custom_migration_table",
+  "entities": [
+    "src/db/models/**/*.ts"
+  ],
+  "migrations": [
+    "src/db/migrations/*.ts"
+  ],
+  "cli": {
+    "entitiesDir": "src/db/models",
+    "migrationsDir": "src/db/migrations"
+  }
+}

@@ -1,19 +1,25 @@
 {
-  "name": "rotten-potatoes-api-basic",
+  "name": "how-to-rest-api-basic",
   "version": "1.0.0",
-  "description": "",
+  "description": "A tutorial on how to build a basic REST API",
+  "author": "Simone Staffa",
+  "license": "See in LICENSE",
+  "homepage": "https://medium.com/",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/simonestaffa/how-to-rest-api-basic"
+  },
   "main": "dist/index.js",
   "scripts": {
-    "prebuild": "rm -rf dist/* && tslint -c tslint.json -p    tsconfig.json --fix",
+    "prebuild": "rm -rf dist/* && tslint -c tslint.json -p tsconfig.json --fix",
     "build": "tsc && cp -rf package.json dist/package.json && cp -rf database.db dist/database.db",
     "prestart": "npm run build",
     "start": "ts-node .",
     "migration:run": "ts-node ./node_modules/typeorm/cli.js migration:run",
     "migration:revert": "ts-node ./node_modules/typeorm/cli.js migration:revert"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["rest-api","expressjs","nodejs","typescript"],
+
   "devDependencies": {
     "@types/body-parser": "^1.19.0",
     "@types/express": "^4.17.3",
